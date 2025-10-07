@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-User Drawing</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="drawing-app">
+        <div class="toolbar">
+            <label>Color: <input type="color" id="color-picker" value="#000000"></label>
+            <label>Size: <input type="range" id="size-slider" min="1" max="30" value="5"></label>
+            <button id="clear-button">Clear Canvas</button>
+        </div>
+
+        <canvas id="drawing-canvas" width="800" height="600"></canvas>
+
+        <div id="status-log">Status: Connecting...</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js"></script>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
