@@ -29,23 +29,21 @@ A collaborative, real-time drawing canvas built with Flask and Socket.IO.
    
 cd MultiUserDrawing
 
-2.**	Create and activate a virtual environment (recommended):**
-Bash
-python -m venv venv
-
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+2. **Create and activate a virtual environment (recommended):**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 3.	**Install dependencies:**
-   
-Bash
-
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+```
 
 4.	**Run the server:**
-   
-Bash
+   ```bash
+   python app.py
+```
 
-python app.py
+5. **Access the App:** Open your browser and navigate to http://127.0.0.1:5000/.
 
-5.	**Access the App:** Open your browser and navigate to http://127.0.0.1:5000/.
 
