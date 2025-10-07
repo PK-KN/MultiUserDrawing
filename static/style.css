@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+.drawing-app {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.toolbar {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+#drawing-canvas {
+    border: 1px solid #ccc;
+    cursor: crosshair;
+    display: block;
+    /* Removes any default bottom spacing */
+}
+
+#status-log {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
