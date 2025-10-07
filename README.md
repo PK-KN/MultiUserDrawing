@@ -25,16 +25,27 @@ A collaborative, real-time drawing canvas built with Flask and Socket.IO.
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/PK-KN/MultiUserDrawing]
+   git clone https://github.com/PK-KN/MultiUserDrawing.git
+   
+cd MultiUserDrawing
+
 2.	Create and activate a virtual environment (recommended):
 Bash
 python -m venv venv
+
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-3.	Install dependencies:
+
+4.	Install dependencies:
+   
 Bash
+
 pip install -r requirements.txt
-4.	Run the server:
+
+6.	Run the server:
+   
 Bash
+
 python app.py
-5.	Access the App: Open your browser and navigate to http://127.0.0.1:5000/.
+
+7.	Access the App: Open your browser and navigate to http://127.0.0.1:5000/.
 
