@@ -1,18 +1,29 @@
-# ✏️ Real-Time Multi-User Drawing Web App
 
-A collaborative, real-time drawing canvas built with Flask and Socket.IO.
+# ✏️ Real-Time Multi-User Drawing Web App  
 
-## ✨ Features
+A collaborative, real-time drawing canvas built with **Flask** and **Socket.IO**, enabling multiple users to sketch together seamlessly.  
 
-- Real-time drawing synchronization across all connected users.
-- Basic drawing tools (color, size, clear canvas).
-- Multi-room capability (currently defaulted to 'default_room').
+## ✨ Features  
+- 🔄 **Real-time synchronization**: Every stroke instantly appears for all connected users.  
+- 🎨 **Drawing tools**: Choose brush color, adjust size, and clear the canvas.  
+- 🏠 **Multi-room support**: Each room has its own independent canvas (default: `default_room`).  
+- 👥 **Collaborative experience**: Multiple users can draw simultaneously without conflicts.  
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack  
+- **Backend:** Python, Flask, Flask-SocketIO (with `eventlet` for async handling)  
+- **Frontend:** HTML5 Canvas, JavaScript, Socket.IO Client  
+- **Templating:** Jinja2 (Flask)  
 
-- **Backend:** Python, Flask, Flask-SocketIO (using `eventlet` for asynchronous handling)
-- **Frontend:** HTML5 Canvas, JavaScript, Socket.IO Client
-- **Templating:** Jinja2 (Flask)
+## 🚀 How It Works  
+1. **Client-side:**  
+   - Captures mouse/touch events on the canvas.  
+   - Sends drawing data (coordinates, color, brush size) to the server via Socket.IO.  
+   - Listens for updates and renders strokes from other users in real time.  
+
+2. **Server-side:**  
+   - Manages WebSocket connections.  
+   - Broadcasts drawing events to all users in the same room.  
+   - Handles room separation and canvas clearing.  
 
 ## 🚀 Setup and Run Locally
 
